@@ -1,0 +1,145 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background: black;
+	color: white;
+}
+
+img {
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background: royalblue;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+	img {
+		width: 5%;
+	}
+	h2 {
+		width: 70%;
+		text-align: left;
+		color: white;
+		letter-spacing: 0.4px;
+	}
+}
+.maincontainer {
+	width: 100%;
+	.insidediv {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+.design {
+	-webkit-text-stroke-color: royalblue;
+	-webkit-text-fill-color: rgb(255, 255, 255);
+	-webkit-text-stroke-width: 2px;
+	text-shadow: -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 #000;
+	letter-spacing: 2px;
+}
+#spantext {
+	font-size: 50px;
+	color: royalblue;
+	font-weight: bold;
+}
+
+footer {
+	background: royalblue;
+	padding: 10px 30px;
+}
+a {
+	color: crimson;
+	letter-spacing: 0.4px;
+}
+
+.waitingtext {
+	font-size: 30px;
+	text-align: center;
+}
+.download-container {
+	margin-bottom: 20px;
+	h4 {
+		text-align: center;
+		display: none;
+		a {
+			background: crimson;
+			padding: 5px 15px;
+			color: white;
+			text-decoration: none;
+			border-radius: 4px;
+			&:hover {
+				color: cirmson;
+				background: royalblue;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+	}
+}
+.socialMedia {
+	font-size: 20px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	top: 25%;
+	color: black;
+	background: #333;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.socialMedia a {
+	margin: 5px;
+	color: white;
+}
+.socialMedia a:hover {
+	color: red;
+}
+
+@media screen and (max-width: 1080px) {
+	nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		background: royalblue;
+		padding: 5px 0px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+		img {
+			width: 10%;
+		}
+		h2 {
+			font-size: 20px;
+			color: white;
+		}
+	}
+	.maincontainer {
+		width: 100%;
+		.insidediv {
+			width: 95%;
+			margin: 0 auto;
+			margin: 10px auto;
+			.singleimage {
+				margin: 10px 0;
+			}
+		}
+	}
+	.socialMedia {
+		top: 60%;
+		opacity: 0.75;
+	}
+
+	.waitingtext {
+		font-size: 22px;
+	}
+}
